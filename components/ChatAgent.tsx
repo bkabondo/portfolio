@@ -35,10 +35,15 @@ export default function ChatAgent() {
     setMessages(newMessages)
     setLoading(true)
     try {
+      // Drop any leading assistant greeting — Anthropic requires user-first ordering
+      const apiMessages = newMessages.filter((_, i) => {
+        if (i === 0 && newMessages[0].role === 'assistant') return false
+        return true
+      })
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: newMessages }),
+        body: JSON.stringify({ messages: apiMessages }),
       })
       const data = await res.json()
       setMessages(prev => [...prev, { role: 'assistant', content: data.reply || 'Sorry, I ran into an error.' }])
