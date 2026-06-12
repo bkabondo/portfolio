@@ -43,6 +43,17 @@ export const PROJECTS = [
     emoji: '⏳',
     color: '#f97316',
   },
+  {
+    id: 'autovision',
+    name: 'AutoVision AI',
+    tagline: 'Deep Learning Car Recognition',
+    description: 'AI-powered car identification game demonstrating computer vision, deep learning, and LLMs. Quiz mode challenges you to identify 15 iconic cars while Claude Vision explains its visual reasoning — like a real CNN feature extractor. Scanner mode identifies any car you upload.',
+    tech: ['Next.js', 'Claude Vision', 'Deep Learning', 'Computer Vision', 'Tailwind'],
+    live: 'https://autovisionbk.vercel.app',
+    github: 'https://github.com/bkabondo/autovision',
+    emoji: '🚗',
+    color: '#00d4ff',
+  },
 ]
 
 export const SKILLS = [
