@@ -60,6 +60,8 @@ He's based in the US and open to full-time roles, freelance contracts, and inter
 
 export const CONTACT = {
   email: 'kabondobenjamin1@gmail.com',
+  phone: '(+1) 682 247 ****',
+  address: '2901 Stadium Dr, Fort Worth TX',
   github: 'https://github.com/bkabondo',
   linkedin: 'https://linkedin.com/in/benjaminkabondo',
 }
