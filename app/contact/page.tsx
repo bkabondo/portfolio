@@ -106,18 +106,37 @@ export default function ContactPage() {
     e.preventDefault()
     setSending(true); setError(null)
     try {
+      // Primary: server route (Resend, when configured)
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       })
-      const data = await res.json()
-      if (!res.ok) throw new Error(data.error || 'Failed to send')
+      if (!res.ok) {
+        // Secondary: FormSubmit relay directly from the browser (blocked from server IPs)
+        const fs = await fetch(`https://formsubmit.co/ajax/${CONTACT.email}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            name: `${form.firstName} ${form.lastName}`,
+            email: form.email,
+            phone: form.phone || '—',
+            service: form.service || 'General',
+            message: form.message,
+            _subject: `Portfolio Inquiry — ${form.service || 'General'} from ${form.firstName} ${form.lastName}`,
+            _template: 'table',
+            _captcha: 'false',
+            _replyto: form.email,
+          }),
+        })
+        const fsData = await fs.json().catch(() => null)
+        if (!fs.ok || String(fsData?.success) === 'false') throw new Error('relay failed')
+      }
       setSent(true)
       setForm({ firstName: '', lastName: '', email: '', phone: '', service: '', message: '' })
       setTimeout(() => setSent(false), 6000)
     } catch {
-      // Email service unavailable — fall back to the visitor's own mail client so the message still arrives
+      // Last resort: the visitor's own mail client, message pre-filled
       const subject = encodeURIComponent(`Portfolio Inquiry — ${form.service || 'General'} from ${form.firstName} ${form.lastName}`)
       const body = encodeURIComponent(`${form.message}\n\n— ${form.firstName} ${form.lastName}\n${form.email}${form.phone ? `\n${form.phone}` : ''}`)
       window.location.href = `mailto:${CONTACT.email}?subject=${subject}&body=${body}`
