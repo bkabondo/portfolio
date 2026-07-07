@@ -33,7 +33,7 @@ export default function ProjectsPage() {
           <div className="grid grid-cols-3 gap-4 mb-14 max-w-lg">
             {[
               { value: '10+', label: 'Apps Shipped' },
-              { value: '4', label: 'Featured Here' },
+              { value: '6', label: 'Featured Here' },
               { value: '100%', label: 'Live & Deployed' },
             ].map(stat => (
               <div key={stat.label} className="rounded-2xl border p-4 text-center" style={{ background: 'var(--card)', borderColor: 'var(--border)' }}>
@@ -52,7 +52,7 @@ export default function ProjectsPage() {
           <div className="rounded-2xl border p-8 text-center" style={{ background: 'var(--card)', borderColor: 'var(--border)' }}>
             <p className="text-lg font-semibold mb-2" style={{ color: 'var(--text)' }}>See more on GitHub</p>
             <p className="text-sm mb-5" style={{ color: 'var(--muted)' }}>
-              6 additional projects — LexAI, VerdantAI, InterviewForge, HabitMind, BildPick, SkillBridge
+              6 additional projects — LexAI, VerdantAI, InterviewForge, HabitMind, BlindPick, SkillBridge
             </p>
             <a href="https://github.com/bkabondo" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold border transition-all"

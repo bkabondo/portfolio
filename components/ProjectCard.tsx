@@ -1,4 +1,5 @@
 import { ExternalLink } from 'lucide-react'
+import Image from 'next/image'
 import GithubIcon from './GithubIcon'
 
 interface Project {
@@ -11,6 +12,7 @@ interface Project {
   github: string
   emoji: string
   color: string
+  logo?: string
 }
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -24,10 +26,16 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div className="h-1 w-full" style={{ background: `linear-gradient(90deg, ${project.color}, ${project.color}66)` }} />
 
       <div className="p-6 flex flex-col flex-1">
-        {/* Emoji + Name */}
+        {/* Logo + Name */}
         <div className="flex items-start justify-between mb-4">
           <div>
-            <div className="text-3xl mb-2">{project.emoji}</div>
+            <div className="mb-2">
+              {project.logo ? (
+                <Image src={project.logo} alt={project.name + ' logo'} width={52} height={52} className="rounded-xl" unoptimized />
+              ) : (
+                <div className="text-3xl">{project.emoji}</div>
+              )}
+            </div>
             <h3 className="text-xl font-bold" style={{ color: 'var(--text)' }}>{project.name}</h3>
             <p className="text-sm font-medium mt-0.5" style={{ color: project.color }}>{project.tagline}</p>
           </div>

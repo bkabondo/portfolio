@@ -9,6 +9,7 @@ export const PROJECTS = [
     github: 'https://github.com/bkabondo/mindforge',
     emoji: '🧠',
     color: '#7c6af7',
+    logo: '/logos/mindforge.svg',
   },
   {
     id: 'rideflow',
@@ -20,6 +21,7 @@ export const PROJECTS = [
     github: 'https://github.com/bkabondo/rideflow',
     emoji: '🚗',
     color: '#c9a028',
+    logo: '/logos/rideflow.svg',
   },
   {
     id: 'finsage',
@@ -31,6 +33,7 @@ export const PROJECTS = [
     github: 'https://github.com/bkabondo/finsage',
     emoji: '💰',
     color: '#22c55e',
+    logo: '/logos/finsage.svg',
   },
   {
     id: 'timelock',
@@ -42,17 +45,31 @@ export const PROJECTS = [
     github: 'https://github.com/bkabondo/timelock',
     emoji: '⏳',
     color: '#f97316',
+    logo: '/logos/timelock.svg',
   },
   {
     id: 'autovision',
     name: 'AutoVision AI',
     tagline: 'Deep Learning Car Recognition',
-    description: 'AI-powered car identification game demonstrating computer vision, deep learning, and LLMs. Quiz mode challenges you to identify 15 iconic cars while Claude Vision explains its visual reasoning — like a real CNN feature extractor. Scanner mode identifies any car you upload.',
+    description: 'AI-powered car identification game with 267 iconic cars spanning 1955–2024. Four modes: quiz, Which Is Which, Guess the Year, and AI Scanner. Claude Vision explains visual reasoning like a real CNN feature extractor.',
     tech: ['Next.js', 'Claude Vision', 'Deep Learning', 'Computer Vision', 'Tailwind'],
     live: 'https://autovisionbk.vercel.app',
     github: 'https://github.com/bkabondo/autovision',
     emoji: '🚗',
     color: '#00d4ff',
+    logo: '/logos/autovision.svg',
+  },
+  {
+    id: 'videosum',
+    name: 'VideoSumm AI',
+    tagline: 'Turn Any Video Into Smart Notes',
+    description: 'Paste a YouTube link and get AI-generated key notes, full transcript, chapter detection, and a chat interface to ask anything about the video content. Works even on videos without captions.',
+    tech: ['Next.js', 'Claude AI', 'YouTube API', 'ytdl-core', 'Tailwind'],
+    live: 'https://videosummbk.vercel.app',
+    github: 'https://github.com/bkabondo/videosum',
+    emoji: '🎬',
+    color: '#7c6af7',
+    logo: '/logos/videosum.svg',
   },
 ]
 
@@ -74,7 +91,8 @@ export const CONTACT = {
   phone: '(+1) 682 247 ****',
   address: '2901 Stadium Dr, Fort Worth TX',
   github: 'https://github.com/bkabondo',
-  linkedin: 'https://linkedin.com/in/benjaminkabondo',
+  linkedin: 'https://www.linkedin.com/in/benjaminkabondo/',
+  instagram: 'https://www.instagram.com/kabondob/',
 }
 
 export const SYSTEM_PROMPT = `You are Benjamin Kabondo's personal AI assistant embedded in his portfolio website. You answer questions about Benjamin in a friendly, professional, and concise way.
@@ -89,6 +107,8 @@ ${BIO}
 - RideFlow (https://rideflowbk.vercel.app): Premium luxury ride-booking platform with Google Maps, Stripe manual capture, driver assignment, custom quote flow. Stack: Next.js, Supabase, Stripe, Google Maps API.
 - FinSage (https://finsagebk.vercel.app): AI financial coach that analyzes spending and gives personalized budget advice using Claude. Stack: Next.js, Supabase, Claude AI.
 - TimeLock (https://timelockbk.vercel.app): Time capsule app — seal messages with unlock dates, AI oracle hints, email delivery on reveal. Stack: Next.js, Supabase, Claude AI, Resend.
+- AutoVision AI (https://autovisionbk.vercel.app): Car recognition game with 267 iconic cars (1955–2024) and four modes — quiz, Which Is Which, Guess the Year, and an AI Scanner where users upload a photo and Claude Vision identifies the car and explains its visual reasoning. Stack: Next.js, Claude Vision, Tailwind.
+- VideoSumm AI (https://videosummbk.vercel.app): YouTube video summarizer — paste a link and get AI key notes, full transcript, chapter detection, and a chat interface to ask questions about the video. Works even on videos without captions. Stack: Next.js, Claude AI, YouTube transcript APIs.
 
 **Skills:**
 Frontend: Next.js, React, TypeScript, Tailwind CSS
@@ -99,8 +119,11 @@ Tools: Git, Vercel, Stripe, Docker, Figma
 **Contact:**
 Email: kabondobenjamin1@gmail.com
 GitHub: https://github.com/bkabondo
+LinkedIn: https://www.linkedin.com/in/benjaminkabondo/
+Instagram: https://www.instagram.com/kabondob/
 
 **Guidelines:**
+- Reply in PLAIN TEXT only — no markdown (no **, no bullets with *, no [text](url) links). The chat window renders raw text. Write URLs bare, e.g. mindforgebk.vercel.app
 - Keep answers short and helpful (2-4 sentences max unless a longer answer is clearly needed)
 - If asked about something you don't know, say so honestly
 - Never make up information — stick to what's provided

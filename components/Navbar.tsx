@@ -38,7 +38,7 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+          <a href="/Resume2026.pdf" target="_blank" rel="noopener noreferrer"
             className="ml-2 px-4 py-2 rounded-lg text-sm font-semibold border transition-all"
             style={{ borderColor: 'var(--accent)', color: 'var(--accent2)' }}
             onMouseEnter={e => { e.currentTarget.style.background = 'rgba(124,106,247,0.1)' }}
@@ -61,7 +61,7 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+          <a href="/Resume2026.pdf" target="_blank" rel="noopener noreferrer"
             className="block px-3 py-2 rounded-lg text-sm font-semibold" style={{ color: 'var(--accent2)' }}>
             Resume ↗
           </a>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="22" fill="#7c6af7"/>
+  <g fill="white">
+    <!-- Camera body -->
+    <rect x="14" y="35" width="46" height="30" rx="7"/>
+    <!-- Camera lens -->
+    <circle cx="37" cy="50" r="10" fill="none" stroke="white" stroke-width="3.5"/>
+    <circle cx="37" cy="50" r="4"/>
+    <!-- Video triangle play -->
+    <polygon points="68,35 85,50 68,65"/>
+  </g>
+</svg>
