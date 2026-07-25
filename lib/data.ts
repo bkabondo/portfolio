@@ -4,7 +4,7 @@ export const PROJECTS = [
     name: 'MindForge',
     tagline: 'AI Flashcard Generator',
     description: 'Create study decks, auto-generate flashcards from any topic using Claude AI, and master them with SM-2 spaced repetition. Flip animations, progress tracking, and smart scheduling — all in one app.',
-    tech: ['Next.js', 'Supabase', 'Claude AI', 'Stripe', 'Tailwind'],
+    tech: ['Python', 'Next.js', 'Supabase', 'Claude AI', 'Stripe', 'Tailwind'],
     live: 'https://mindforgebk.vercel.app',
     github: 'https://github.com/bkabondo/mindforge',
     emoji: '🧠',
@@ -16,7 +16,7 @@ export const PROJECTS = [
     name: 'RideFlow',
     tagline: 'Premium Luxury Ride Platform',
     description: 'A full-stack black-car booking platform: custom quote system, Google Maps autocomplete, Stripe payment intents with manual capture, driver assignment, and real-time ride tracking.',
-    tech: ['Next.js', 'Supabase', 'Stripe', 'Google Maps', 'Tailwind'],
+    tech: ['Python', 'Next.js', 'Supabase', 'Stripe', 'Google Maps', 'Tailwind'],
     live: 'https://rideflowbk.vercel.app',
     github: 'https://github.com/bkabondo/rideflow',
     emoji: '🚗',
@@ -28,7 +28,7 @@ export const PROJECTS = [
     name: 'FinSage',
     tagline: 'AI Financial Coach',
     description: 'Track transactions, manage budgets, and get Claude AI-generated insights on your last 30 days of spending. Personalized recommendations and spending breakdowns to help you save smarter.',
-    tech: ['Next.js', 'Supabase', 'Claude AI', 'Chart.js', 'Tailwind'],
+    tech: ['Python', 'Next.js', 'Supabase', 'Claude AI', 'Chart.js', 'Tailwind'],
     live: 'https://finsagebk.vercel.app',
     github: 'https://github.com/bkabondo/finsage',
     emoji: '💰',
@@ -40,7 +40,7 @@ export const PROJECTS = [
     name: 'TimeLock',
     tagline: 'AI-Powered Time Capsule',
     description: 'Seal personal messages with a future unlock date, receive AI-generated oracle hints, share capsules with recipients, and experience the reveal when time is up — memories preserved with a digital twist.',
-    tech: ['Next.js', 'Supabase', 'Claude AI', 'Resend', 'Tailwind'],
+    tech: ['Python', 'Next.js', 'Supabase', 'Claude AI', 'Resend', 'Tailwind'],
     live: 'https://timelockbk.vercel.app',
     github: 'https://github.com/bkabondo/timelock',
     emoji: '⏳',
@@ -52,7 +52,7 @@ export const PROJECTS = [
     name: 'AutoVision AI',
     tagline: 'Deep Learning Car Recognition',
     description: 'AI-powered car identification game with 267 iconic cars spanning 1955–2024. Four modes: quiz, Which Is Which, Guess the Year, and AI Scanner. Claude Vision explains visual reasoning like a real CNN feature extractor.',
-    tech: ['Next.js', 'Claude Vision', 'Deep Learning', 'Computer Vision', 'Tailwind'],
+    tech: ['Python', 'Next.js', 'Claude Vision', 'Deep Learning', 'Computer Vision', 'Tailwind'],
     live: 'https://autovisionbk.vercel.app',
     github: 'https://github.com/bkabondo/autovision',
     emoji: '🚗',
@@ -64,7 +64,7 @@ export const PROJECTS = [
     name: 'VideoSumm AI',
     tagline: 'Turn Any Video Into Smart Notes',
     description: 'Paste a YouTube link and get AI-generated key notes, full transcript, chapter detection, and a chat interface to ask anything about the video content. Works even on videos without captions.',
-    tech: ['Next.js', 'Claude AI', 'YouTube API', 'ytdl-core', 'Tailwind'],
+    tech: ['Python', 'Next.js', 'Claude AI', 'YouTube API', 'Tailwind'],
     live: 'https://videosummbk.vercel.app',
     github: 'https://github.com/bkabondo/videosum',
     emoji: '🎬',
@@ -75,12 +75,12 @@ export const PROJECTS = [
 
 export const SKILLS = [
   { category: 'Frontend', items: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'] },
-  { category: 'Backend', items: ['Node.js', 'PostgreSQL', 'Supabase', 'REST APIs', 'Python'] },
+  { category: 'Backend', items: ['Python', 'Python Serverless Functions', 'REST APIs', 'PostgreSQL', 'Supabase', 'JWT / Cookie Auth'] },
   { category: 'AI / ML', items: ['Claude AI', 'Anthropic SDK', 'Prompt Engineering', 'OpenAI', 'LangChain'] },
   { category: 'Tools', items: ['Git', 'Vercel', 'Stripe', 'Docker', 'Figma'] },
 ]
 
-export const BIO = `Benjamin Kabondo is a full-stack software developer passionate about building AI-powered applications that solve real problems. He specializes in Next.js, React, TypeScript, and integrating large language models (Claude, GPT) into production-grade web apps.
+export const BIO = `Benjamin Kabondo is a full-stack software developer passionate about building AI-powered applications that solve real problems. He specializes in Python back-end development — serverless API functions, authentication, and large-language-model integrations (Claude, GPT) — paired with React/Next.js front-ends to ship production-grade web apps.
 
 Benjamin has shipped 10+ projects — from AI flashcard generators and luxury ride platforms to financial coaching tools and time capsule apps — all with clean design, real authentication, and live payment processing.
 
@@ -103,16 +103,16 @@ Here's what you know about Benjamin:
 ${BIO}
 
 **Projects:**
-- MindForge (https://mindforgebk.vercel.app): AI flashcard generator using Claude AI + spaced repetition. Stack: Next.js, Supabase, Anthropic SDK, Stripe.
-- RideFlow (https://rideflowbk.vercel.app): Premium luxury ride-booking platform with Google Maps, Stripe manual capture, driver assignment, custom quote flow. Stack: Next.js, Supabase, Stripe, Google Maps API.
-- FinSage (https://finsagebk.vercel.app): AI financial coach that analyzes spending and gives personalized budget advice using Claude. Stack: Next.js, Supabase, Claude AI.
-- TimeLock (https://timelockbk.vercel.app): Time capsule app — seal messages with unlock dates, AI oracle hints, email delivery on reveal. Stack: Next.js, Supabase, Claude AI, Resend.
-- AutoVision AI (https://autovisionbk.vercel.app): Car recognition game with 267 iconic cars (1955–2024) and four modes — quiz, Which Is Which, Guess the Year, and an AI Scanner where users upload a photo and Claude Vision identifies the car and explains its visual reasoning. Stack: Next.js, Claude Vision, Tailwind.
-- VideoSumm AI (https://videosummbk.vercel.app): YouTube video summarizer — paste a link and get AI key notes, full transcript, chapter detection, and a chat interface to ask questions about the video. Works even on videos without captions. Stack: Next.js, Claude AI, YouTube transcript APIs.
+- MindForge (https://mindforgebk.vercel.app): AI flashcard generator using Claude AI + spaced repetition. Stack: Python, Next.js, Supabase, Anthropic SDK, Stripe.
+- RideFlow (https://rideflowbk.vercel.app): Premium luxury ride-booking platform with Google Maps, Stripe manual capture, driver assignment, custom quote flow. Stack: Python, Next.js, Supabase, Stripe, Google Maps API.
+- FinSage (https://finsagebk.vercel.app): AI financial coach that analyzes spending and gives personalized budget advice using Claude. Stack: Python, Next.js, Supabase, Claude AI.
+- TimeLock (https://timelockbk.vercel.app): Time capsule app — seal messages with unlock dates, AI oracle hints, email delivery on reveal. Stack: Python, Next.js, Supabase, Claude AI, Resend.
+- AutoVision AI (https://autovisionbk.vercel.app): Car recognition game with 267 iconic cars (1955–2024) and four modes — quiz, Which Is Which, Guess the Year, and an AI Scanner where users upload a photo and Claude Vision identifies the car and explains its visual reasoning. Stack: Python, Next.js, Claude Vision, Tailwind.
+- VideoSumm AI (https://videosummbk.vercel.app): YouTube video summarizer — paste a link and get AI key notes, full transcript, chapter detection, and a chat interface to ask questions about the video. Works even on videos without captions. Stack: Python, Next.js, Claude AI, YouTube transcript APIs.
 
 **Skills:**
 Frontend: Next.js, React, TypeScript, Tailwind CSS
-Backend: Node.js, PostgreSQL, Supabase, REST APIs, Python
+Backend: Python (serverless API functions), REST APIs, PostgreSQL, Supabase, JWT/cookie auth. His project backends are written mainly in Python (Stripe/payment code stays in TypeScript).
 AI/ML: Claude/Anthropic SDK, OpenAI, Prompt Engineering
 Tools: Git, Vercel, Stripe, Docker, Figma
 
