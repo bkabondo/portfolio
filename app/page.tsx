@@ -107,7 +107,8 @@ export default function Home() {
               <div className="space-y-4">
                 <p className="leading-relaxed" style={{ color: '#8888aa' }}>
                   I&apos;m a full-stack developer who loves turning complex ideas into clean, working software.
-                  I specialize in <strong style={{ color: 'var(--text)' }}>Next.js, TypeScript, Supabase</strong>, and integrating AI models
+                  I build <strong style={{ color: 'var(--text)' }}>Python</strong> back-ends — serverless API functions, REST, and auth —
+                  paired with <strong style={{ color: 'var(--text)' }}>Next.js</strong> front-ends, and I integrate AI models
                   like <strong style={{ color: 'var(--text)' }}>Claude</strong> into real products.
                 </p>
                 <p className="leading-relaxed" style={{ color: '#8888aa' }}>
