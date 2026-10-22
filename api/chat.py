@@ -22,12 +22,25 @@ Benjamin has shipped 10+ projects — from AI flashcard generators and luxury ri
 
 He's based in the US and open to full-time roles, freelance contracts, and interesting collaborations.
 
+**Education:**
+Texas Christian University, Fort Worth TX — B.S. Computer Science, Minor in Mathematics. GPA 3.49, expected May 2027.
+Honors: 1st Place at the Neeley AI Hackathon; Dean's Honor List, College of Science & Engineering; Bridge2Rwanda Scholar; Perfect Score on the Rwanda National High School Leaving Examination.
+
+**Experience:**
+- Junior Engineer Intern at Iternal Technologies (September 2026 – present): builds the Iternal Workforce enterprise AI application and a centralized Skill Library for reusable AI skills and prompts, integrates workflows with identity, audit logging, storage and AI services, and works on an event-driven architecture using NATS/JetStream.
+- Wireless Testing Intern at UL Solutions, Fremont CA (May–August 2026 and May–August 2025): built Python automation for FCC/ISED wireless compliance testing, cut conducted unit test time by 67% and radiated unit test time by 75%, and validated compliance data for 100+ wireless devices across 4 client projects.
+- University Unions Supervisor at Texas Christian University (August 2024 – present): manages the event-scheduling database for 84+ weekly events and supervises 30 student employees.
+- Freelance Full-Stack Developer at Prestige Limo (September–October 2024, remote): delivered a booking platform with Google Maps autocomplete, Stripe payments and real-time driver assignment, plus an admin dashboard, in a 2-month engagement.
+
+**Certifications:**
+Generative AI Professional Certificate (Snowflake, July 2026); Docker Foundations Professional Certificate (Docker Inc, July 2026); Microsoft Azure AI Essentials Professional Certificate (Microsoft, June 2026).
+
 **Projects:**
-- MindForge (https://mindforgebk.vercel.app): AI flashcard generator using Claude AI + spaced repetition. Stack: Python, Next.js, Supabase, Anthropic SDK, Stripe.
-- RideFlow (https://rideflowbk.vercel.app): Premium luxury ride-booking platform with Google Maps, Stripe manual capture, driver assignment, custom quote flow. Stack: Python, Next.js, Supabase, Stripe, Google Maps API.
-- FinSage (https://finsagebk.vercel.app): AI financial coach that analyzes spending and gives personalized budget advice using Claude. Stack: Python, Next.js, Supabase, Claude AI.
 - TimeLock (https://timelockbk.vercel.app): Time capsule app — seal messages with unlock dates, AI oracle hints, email delivery on reveal. Stack: Python, Next.js, Supabase, Claude AI, Resend.
 - AutoVision AI (https://autovisionbk.vercel.app): Car recognition game with 267 iconic cars (1955–2024) and four modes — quiz, Which Is Which, Guess the Year, and an AI Scanner where users upload a photo and Claude Vision identifies the car and explains its visual reasoning. Stack: Python, Next.js, Claude Vision, Tailwind.
+- RideFlow (https://rideflowbk.vercel.app): Premium luxury ride-booking platform with Google Maps, Stripe manual capture, driver assignment, custom quote flow. Stack: Python, Next.js, Supabase, Stripe, Google Maps API.
+- MindForge (https://mindforgebk.vercel.app): AI flashcard generator using Claude AI + spaced repetition. Stack: Python, Next.js, Supabase, Anthropic SDK, Stripe.
+- FinSage (https://finsagebk.vercel.app): AI financial coach that analyzes spending and gives personalized budget advice using Claude. Stack: Python, Next.js, Supabase, Claude AI.
 - VideoSumm AI (https://videosummbk.vercel.app): YouTube video summarizer — paste a link and get AI key notes, full transcript, chapter detection, and a chat interface to ask questions about the video. Works even on videos without captions. Stack: Python, Next.js, Claude AI, YouTube transcript APIs.
 
 **Skills:**
